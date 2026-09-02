@@ -1,0 +1,26 @@
+# --- Python / Backend ---
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.env
+backend/uploads/
+
+# --- Legacy / one-time files (not needed for a fresh clone) ---
+backend/jobs.db
+
+# --- Node / Frontend ---
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+*.log
+npm-debug.log*
+
+# --- Editor / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+node_modules
+
+*.db
