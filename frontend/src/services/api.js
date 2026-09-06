@@ -27,7 +27,7 @@ export const getJobAnalysis = async (jobId, skills) => {
   return response.data;
 };
 export const getStats = async () => {
-  const response = await api.get("/stats");
+  const response = await api.get("/stats/");
   return response.data;
 };
 
