@@ -47,7 +47,9 @@ export default function Settings() {
                             <FaServer className="text-blue-400 shrink-0" />
                             <div>
                                 <p className="text-white text-sm font-medium">Backend API</p>
-                                <p className="text-gray-400 text-xs">http://127.0.0.1:8000</p>
+                                <p className="text-gray-400 text-xs">
+                                    {import.meta.env.VITE_API_URL || "http://127.0.0.1:8000"}
+                                </p>
                             </div>
                         </div>
 
