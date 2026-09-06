@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Analytics as VercelAnalytics } from '@vercel/analytics/react';
 import Dashboard from "./pages/Dashboard";
 import JobDetails from "./pages/JobDetails";
 import ResumeAnalysis from "./pages/ResumeAnalysis";
@@ -26,6 +27,7 @@ function App() {
         <Route path="/reports" element={<Reports />} />
         <Route path="/settings" element={<Settings />} />
       </Routes>
+      <VercelAnalytics />
     </BrowserRouter>
   );
 }
